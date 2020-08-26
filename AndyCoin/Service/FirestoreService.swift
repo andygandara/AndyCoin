@@ -109,6 +109,16 @@ class FirestoreService: ObservableObject {
         }
     }
     
+    func deleteTransaction(_ transaction: Transaction, completion: @escaping (Result<Void, Error>) -> Void) {
+        db.collection(transactionsPath).document(transaction.id ?? "").delete() { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(()))
+            }
+        }
+    }
+    
     func transactions(for user: ACUser) -> [Transaction] {
         return transactions.filter { $0.userId == user.id }
     }

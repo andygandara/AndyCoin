@@ -35,14 +35,14 @@ struct BalanceView: View {
                     if #available(iOS 14.0, *) {
                         List {
                             ForEach(service.transactions(for: user)) { transaction in
-                                BalanceRowView(transaction: transaction)
+                                BalanceRowView(service: service, transaction: transaction)
                             }
                         }
                         .listStyle(InsetGroupedListStyle())
                     } else {
                         List {
                             ForEach(service.transactions(for: user)) { transaction in
-                                BalanceRowView(transaction: transaction)
+                                BalanceRowView(service: service, transaction: transaction)
                             }
                         }
                         .listStyle(GroupedListStyle())
@@ -73,14 +73,14 @@ struct BalanceView: View {
                         if #available(iOS 14.0, *) {
                             List {
                                 ForEach(service.transactions(for: user)) { transaction in
-                                    BalanceRowView(transaction: transaction)
+                                    BalanceRowView(service: service, transaction: transaction)
                                 }
                             }
                             .listStyle(InsetGroupedListStyle())
                         } else {
                             List {
                                 ForEach(service.transactions(for: user)) { transaction in
-                                    BalanceRowView(transaction: transaction)
+                                    BalanceRowView(service: service, transaction: transaction)
                                 }
                             }
                             .listStyle(GroupedListStyle())
