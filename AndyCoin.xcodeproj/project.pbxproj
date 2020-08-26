@@ -12,7 +12,6 @@
 		B87BEBB224F1F494005B208F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBB124F1F494005B208F /* SceneDelegate.swift */; };
 		B87BEBB424F1F494005B208F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBB324F1F494005B208F /* RootView.swift */; };
 		B87BEBB624F1F496005B208F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBB524F1F496005B208F /* Assets.xcassets */; };
-		B87BEBB924F1F496005B208F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBB824F1F496005B208F /* Preview Assets.xcassets */; };
 		B87BEBBC24F1F496005B208F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBBA24F1F496005B208F /* LaunchScreen.storyboard */; };
 		B87BEBC424F1F4BB005B208F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBC324F1F4BB005B208F /* SignInView.swift */; };
 		B87BEBC624F1F5A0005B208F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBC524F1F5A0005B208F /* BalanceView.swift */; };
@@ -28,6 +27,8 @@
 		B87BEBDF24F65A71005B208F /* AdminID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBDE24F65A71005B208F /* AdminID.swift */; };
 		B87BEBE124F65BA0005B208F /* ACError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBE024F65BA0005B208F /* ACError.swift */; };
 		B87BEBE924F66952005B208F /* UserBalanceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBE824F66952005B208F /* UserBalanceRowView.swift */; };
+		B87BEBEF24F6C0D8005B208F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBEE24F6C0D7005B208F /* Preview Assets.xcassets */; };
+		B87BEBF124F6C17F005B208F /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBF024F6C17F005B208F /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +38,6 @@
 		B87BEBB124F1F494005B208F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B87BEBB324F1F494005B208F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B87BEBB524F1F496005B208F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B87BEBB824F1F496005B208F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B87BEBBB24F1F496005B208F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B87BEBBD24F1F496005B208F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B87BEBC324F1F4BB005B208F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -54,6 +54,8 @@
 		B87BEBDE24F65A71005B208F /* AdminID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminID.swift; sourceTree = "<group>"; };
 		B87BEBE024F65BA0005B208F /* ACError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACError.swift; sourceTree = "<group>"; };
 		B87BEBE824F66952005B208F /* UserBalanceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalanceRowView.swift; sourceTree = "<group>"; };
+		B87BEBEE24F6C0D7005B208F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B87BEBF024F6C17F005B208F /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		BB0DBE211976096631401531 /* Pods_AndyCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndyCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1FE5CBA94CAFCFCB389FEC /* Pods-AndyCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndyCoin.release.xcconfig"; path = "Target Support Files/Pods-AndyCoin/Pods-AndyCoin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,17 +120,9 @@
 				B87BEBEC24F6BF10005B208F /* Service */,
 				B87BEBEA24F6BE5C005B208F /* Extensions */,
 				B87BEBEB24F6BE76005B208F /* Utilities */,
-				B87BEBB724F1F496005B208F /* Preview Content */,
+				B87BEBED24F6C0D7005B208F /* Preview Content */,
 			);
 			path = AndyCoin;
-			sourceTree = "<group>";
-		};
-		B87BEBB724F1F496005B208F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B87BEBB824F1F496005B208F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		B87BEBC924F20321005B208F /* Models */ = {
@@ -169,6 +163,7 @@
 			children = (
 				B87BEBD824F63F24005B208F /* UIApplication+Extensions.swift */,
 				B87BEBDA24F64961005B208F /* Int+Extensions.swift */,
+				B87BEBF024F6C17F005B208F /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +182,14 @@
 				B87BEBD024F2083E005B208F /* FirestoreService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		B87BEBED24F6C0D7005B208F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBEE24F6C0D7005B208F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +251,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87BEBEF24F6C0D8005B208F /* Preview Assets.xcassets in Resources */,
 				B87BEBBC24F1F496005B208F /* LaunchScreen.storyboard in Resources */,
 				B87BEBCE24F20730005B208F /* GoogleService-Info.plist in Resources */,
-				B87BEBB924F1F496005B208F /* Preview Assets.xcassets in Resources */,
 				B87BEBB624F1F496005B208F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +315,7 @@
 				B87BEBC624F1F5A0005B208F /* BalanceView.swift in Sources */,
 				B87BEBE124F65BA0005B208F /* ACError.swift in Sources */,
 				B87BEBDB24F64961005B208F /* Int+Extensions.swift in Sources */,
+				B87BEBF124F6C17F005B208F /* Date+Extensions.swift in Sources */,
 				B87BEBB224F1F494005B208F /* SceneDelegate.swift in Sources */,
 				B87BEBC424F1F4BB005B208F /* SignInView.swift in Sources */,
 				B87BEBD324F4EB08005B208F /* User.swift in Sources */,
