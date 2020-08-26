@@ -12,7 +12,7 @@ struct UserBalanceRowView: View {
     var user: ACUser
     
     var body: some View {
-        NavigationLink(destination: BalanceView(service: service, title: user.name, user: user)) {
+        NavigationLink(destination: BalanceView(service: service, title: user.name, user: user, isAdminView: true)) {
             HStack {
                 Text(user.name)
                     .fontWeight(.medium)
