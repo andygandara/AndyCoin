@@ -108,18 +108,17 @@
 		B87BEBAE24F1F494005B208F /* AndyCoin */ = {
 			isa = PBXGroup;
 			children = (
-				B87BEBCF24F20801005B208F /* Lifecycle */,
 				B87BEBB524F1F496005B208F /* Assets.xcassets */,
 				B87BEBBA24F1F496005B208F /* LaunchScreen.storyboard */,
 				B87BEBBD24F1F496005B208F /* Info.plist */,
 				B87BEBCD24F20730005B208F /* GoogleService-Info.plist */,
-				B87BEBD024F2083E005B208F /* FirestoreService.swift */,
+				B87BEBCF24F20801005B208F /* Lifecycle */,
 				B87BEBCC24F206B4005B208F /* Views */,
 				B87BEBC924F20321005B208F /* Models */,
+				B87BEBEC24F6BF10005B208F /* Service */,
+				B87BEBEA24F6BE5C005B208F /* Extensions */,
+				B87BEBEB24F6BE76005B208F /* Utilities */,
 				B87BEBB724F1F496005B208F /* Preview Content */,
-				B87BEBD824F63F24005B208F /* UIApplication+Extensions.swift */,
-				B87BEBDA24F64961005B208F /* Int+Extensions.swift */,
-				B87BEBE024F65BA0005B208F /* ACError.swift */,
 			);
 			path = AndyCoin;
 			sourceTree = "<group>";
@@ -163,6 +162,31 @@
 				B87BEBB124F1F494005B208F /* SceneDelegate.swift */,
 			);
 			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		B87BEBEA24F6BE5C005B208F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBD824F63F24005B208F /* UIApplication+Extensions.swift */,
+				B87BEBDA24F64961005B208F /* Int+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B87BEBEB24F6BE76005B208F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBE024F65BA0005B208F /* ACError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B87BEBEC24F6BF10005B208F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBD024F2083E005B208F /* FirestoreService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
