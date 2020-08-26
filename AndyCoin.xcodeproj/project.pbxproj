@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82727365EC5190718B284313 /* Pods_AndyCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0DBE211976096631401531 /* Pods_AndyCoin.framework */; };
+		B87BEBB024F1F494005B208F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBAF24F1F494005B208F /* AppDelegate.swift */; };
+		B87BEBB224F1F494005B208F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBB124F1F494005B208F /* SceneDelegate.swift */; };
+		B87BEBB424F1F494005B208F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBB324F1F494005B208F /* RootView.swift */; };
+		B87BEBB624F1F496005B208F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBB524F1F496005B208F /* Assets.xcassets */; };
+		B87BEBB924F1F496005B208F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBB824F1F496005B208F /* Preview Assets.xcassets */; };
+		B87BEBBC24F1F496005B208F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBBA24F1F496005B208F /* LaunchScreen.storyboard */; };
+		B87BEBC424F1F4BB005B208F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBC324F1F4BB005B208F /* SignInView.swift */; };
+		B87BEBC624F1F5A0005B208F /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBC524F1F5A0005B208F /* BalanceView.swift */; };
+		B87BEBC824F1F69D005B208F /* BalanceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBC724F1F69D005B208F /* BalanceRowView.swift */; };
+		B87BEBCB24F20341005B208F /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBCA24F20341005B208F /* Transaction.swift */; };
+		B87BEBCE24F20730005B208F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B87BEBCD24F20730005B208F /* GoogleService-Info.plist */; };
+		B87BEBD124F2083E005B208F /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBD024F2083E005B208F /* FirestoreService.swift */; };
+		B87BEBD324F4EB08005B208F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBD224F4EB08005B208F /* User.swift */; };
+		B87BEBD524F4EC42005B208F /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBD424F4EC42005B208F /* AddTransactionView.swift */; };
+		B87BEBD724F4FB2F005B208F /* UserBalancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBD624F4FB2F005B208F /* UserBalancesView.swift */; };
+		B87BEBD924F63F24005B208F /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBD824F63F24005B208F /* UIApplication+Extensions.swift */; };
+		B87BEBDB24F64961005B208F /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBDA24F64961005B208F /* Int+Extensions.swift */; };
+		B87BEBDF24F65A71005B208F /* AdminID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBDE24F65A71005B208F /* AdminID.swift */; };
+		B87BEBE124F65BA0005B208F /* ACError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBE024F65BA0005B208F /* ACError.swift */; };
+		B87BEBE924F66952005B208F /* UserBalanceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87BEBE824F66952005B208F /* UserBalanceRowView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6AD1D6C63BBE6FC686568ED8 /* Pods-AndyCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndyCoin.debug.xcconfig"; path = "Target Support Files/Pods-AndyCoin/Pods-AndyCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		B87BEBAC24F1F494005B208F /* AndyCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndyCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87BEBAF24F1F494005B208F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B87BEBB124F1F494005B208F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B87BEBB324F1F494005B208F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B87BEBB524F1F496005B208F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B87BEBB824F1F496005B208F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B87BEBBB24F1F496005B208F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B87BEBBD24F1F496005B208F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B87BEBC324F1F4BB005B208F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B87BEBC524F1F5A0005B208F /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
+		B87BEBC724F1F69D005B208F /* BalanceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceRowView.swift; sourceTree = "<group>"; };
+		B87BEBCA24F20341005B208F /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B87BEBCD24F20730005B208F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B87BEBD024F2083E005B208F /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		B87BEBD224F4EB08005B208F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B87BEBD424F4EC42005B208F /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		B87BEBD624F4FB2F005B208F /* UserBalancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalancesView.swift; sourceTree = "<group>"; };
+		B87BEBD824F63F24005B208F /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		B87BEBDA24F64961005B208F /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		B87BEBDE24F65A71005B208F /* AdminID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminID.swift; sourceTree = "<group>"; };
+		B87BEBE024F65BA0005B208F /* ACError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACError.swift; sourceTree = "<group>"; };
+		B87BEBE824F66952005B208F /* UserBalanceRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBalanceRowView.swift; sourceTree = "<group>"; };
+		BB0DBE211976096631401531 /* Pods_AndyCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndyCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1FE5CBA94CAFCFCB389FEC /* Pods-AndyCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndyCoin.release.xcconfig"; path = "Target Support Files/Pods-AndyCoin/Pods-AndyCoin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B87BEBA924F1F494005B208F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82727365EC5190718B284313 /* Pods_AndyCoin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661CDA6B06CDF79BC7B8844C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB0DBE211976096631401531 /* Pods_AndyCoin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B1005D59F664B67B4A65DFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AD1D6C63BBE6FC686568ED8 /* Pods-AndyCoin.debug.xcconfig */,
+				FA1FE5CBA94CAFCFCB389FEC /* Pods-AndyCoin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B87BEBA324F1F494005B208F = {
+			isa = PBXGroup;
+			children = (
+				B87BEBAE24F1F494005B208F /* AndyCoin */,
+				B87BEBAD24F1F494005B208F /* Products */,
+				7B1005D59F664B67B4A65DFD /* Pods */,
+				661CDA6B06CDF79BC7B8844C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B87BEBAD24F1F494005B208F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBAC24F1F494005B208F /* AndyCoin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B87BEBAE24F1F494005B208F /* AndyCoin */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBCF24F20801005B208F /* Lifecycle */,
+				B87BEBB524F1F496005B208F /* Assets.xcassets */,
+				B87BEBBA24F1F496005B208F /* LaunchScreen.storyboard */,
+				B87BEBBD24F1F496005B208F /* Info.plist */,
+				B87BEBCD24F20730005B208F /* GoogleService-Info.plist */,
+				B87BEBD024F2083E005B208F /* FirestoreService.swift */,
+				B87BEBCC24F206B4005B208F /* Views */,
+				B87BEBC924F20321005B208F /* Models */,
+				B87BEBB724F1F496005B208F /* Preview Content */,
+				B87BEBD824F63F24005B208F /* UIApplication+Extensions.swift */,
+				B87BEBDA24F64961005B208F /* Int+Extensions.swift */,
+				B87BEBE024F65BA0005B208F /* ACError.swift */,
+			);
+			path = AndyCoin;
+			sourceTree = "<group>";
+		};
+		B87BEBB724F1F496005B208F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBB824F1F496005B208F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B87BEBC924F20321005B208F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBCA24F20341005B208F /* Transaction.swift */,
+				B87BEBD224F4EB08005B208F /* User.swift */,
+				B87BEBDE24F65A71005B208F /* AdminID.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B87BEBCC24F206B4005B208F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBC324F1F4BB005B208F /* SignInView.swift */,
+				B87BEBB324F1F494005B208F /* RootView.swift */,
+				B87BEBC524F1F5A0005B208F /* BalanceView.swift */,
+				B87BEBC724F1F69D005B208F /* BalanceRowView.swift */,
+				B87BEBD424F4EC42005B208F /* AddTransactionView.swift */,
+				B87BEBD624F4FB2F005B208F /* UserBalancesView.swift */,
+				B87BEBE824F66952005B208F /* UserBalanceRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B87BEBCF24F20801005B208F /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				B87BEBAF24F1F494005B208F /* AppDelegate.swift */,
+				B87BEBB124F1F494005B208F /* SceneDelegate.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B87BEBAB24F1F494005B208F /* AndyCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B87BEBC024F1F496005B208F /* Build configuration list for PBXNativeTarget "AndyCoin" */;
+			buildPhases = (
+				B11C3656CD003B8F6FE0B218 /* [CP] Check Pods Manifest.lock */,
+				B87BEBA824F1F494005B208F /* Sources */,
+				B87BEBA924F1F494005B208F /* Frameworks */,
+				B87BEBAA24F1F494005B208F /* Resources */,
+				DAB6315903FDD6D92AB677C0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndyCoin;
+			productName = AndyCoin;
+			productReference = B87BEBAC24F1F494005B208F /* AndyCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B87BEBA424F1F494005B208F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B87BEBAB24F1F494005B208F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = B87BEBA724F1F494005B208F /* Build configuration list for PBXProject "AndyCoin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B87BEBA324F1F494005B208F;
+			productRefGroup = B87BEBAD24F1F494005B208F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B87BEBAB24F1F494005B208F /* AndyCoin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B87BEBAA24F1F494005B208F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87BEBBC24F1F496005B208F /* LaunchScreen.storyboard in Resources */,
+				B87BEBCE24F20730005B208F /* GoogleService-Info.plist in Resources */,
+				B87BEBB924F1F496005B208F /* Preview Assets.xcassets in Resources */,
+				B87BEBB624F1F496005B208F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B11C3656CD003B8F6FE0B218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AndyCoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAB6315903FDD6D92AB677C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AndyCoin/Pods-AndyCoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AndyCoin/Pods-AndyCoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AndyCoin/Pods-AndyCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B87BEBA824F1F494005B208F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87BEBD724F4FB2F005B208F /* UserBalancesView.swift in Sources */,
+				B87BEBDF24F65A71005B208F /* AdminID.swift in Sources */,
+				B87BEBCB24F20341005B208F /* Transaction.swift in Sources */,
+				B87BEBD924F63F24005B208F /* UIApplication+Extensions.swift in Sources */,
+				B87BEBB024F1F494005B208F /* AppDelegate.swift in Sources */,
+				B87BEBC624F1F5A0005B208F /* BalanceView.swift in Sources */,
+				B87BEBE124F65BA0005B208F /* ACError.swift in Sources */,
+				B87BEBDB24F64961005B208F /* Int+Extensions.swift in Sources */,
+				B87BEBB224F1F494005B208F /* SceneDelegate.swift in Sources */,
+				B87BEBC424F1F4BB005B208F /* SignInView.swift in Sources */,
+				B87BEBD324F4EB08005B208F /* User.swift in Sources */,
+				B87BEBD124F2083E005B208F /* FirestoreService.swift in Sources */,
+				B87BEBC824F1F69D005B208F /* BalanceRowView.swift in Sources */,
+				B87BEBB424F1F494005B208F /* RootView.swift in Sources */,
+				B87BEBD524F4EC42005B208F /* AddTransactionView.swift in Sources */,
+				B87BEBE924F66952005B208F /* UserBalanceRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B87BEBBA24F1F496005B208F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B87BEBBB24F1F496005B208F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B87BEBBE24F1F496005B208F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B87BEBBF24F1F496005B208F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B87BEBC124F1F496005B208F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AD1D6C63BBE6FC686568ED8 /* Pods-AndyCoin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AndyCoin/Preview Content\"";
+				DEVELOPMENT_TEAM = LTPP3D6J7U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AndyCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Andy-Gandara.AndyCoin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B87BEBC224F1F496005B208F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA1FE5CBA94CAFCFCB389FEC /* Pods-AndyCoin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"AndyCoin/Preview Content\"";
+				DEVELOPMENT_TEAM = LTPP3D6J7U;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AndyCoin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Andy-Gandara.AndyCoin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B87BEBA724F1F494005B208F /* Build configuration list for PBXProject "AndyCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87BEBBE24F1F496005B208F /* Debug */,
+				B87BEBBF24F1F496005B208F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B87BEBC024F1F496005B208F /* Build configuration list for PBXNativeTarget "AndyCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87BEBC124F1F496005B208F /* Debug */,
+				B87BEBC224F1F496005B208F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B87BEBA424F1F494005B208F /* Project object */;
+}

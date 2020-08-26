@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>407481750838-9ib5jgouu56cdb7143s5f7o0iuhh7s1j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.407481750838-9ib5jgouu56cdb7143s5f7o0iuhh7s1j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7ljO05BD6YIh3Mz1cKnzLtv37bKe-nSE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>407481750838</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Andy-Gandara.AndyCoin</string>
+	<key>PROJECT_ID</key>
+	<string>andycoin-69dca</string>
+	<key>STORAGE_BUCKET</key>
+	<string>andycoin-69dca.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:407481750838:ios:5b3fc86ef9ff76961dcf97</string>
+	<key>DATABASE_URL</key>
+	<string>https://andycoin-69dca.firebaseio.com</string>
+</dict>
+</plist>
