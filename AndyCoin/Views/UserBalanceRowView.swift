@@ -18,6 +18,7 @@ struct UserBalanceRowView: View {
                     .fontWeight(.medium)
                 Spacer()
                 Text(service.balance(for: user).andyCoinFormatted)
+                    .font(.system(.body, design: .monospaced))
                     .foregroundColor(Color(UIColor.secondaryLabel))
             }
         }
