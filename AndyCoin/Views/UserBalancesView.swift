@@ -15,6 +15,19 @@ struct UserBalancesView: View {
         presentAddTransactionView.toggle()
     }
     
+    func getTrailingButton() -> AnyView? {
+        if service.isAdmin {
+            return AnyView(
+                Button(action: togglePresentAddTransactionView) {
+                    Image(systemName: "dollarsign.circle.fill")
+                        .imageScale(.large)
+                        .padding(4)
+                }
+            )
+        }
+        return nil
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -25,9 +38,7 @@ struct UserBalancesView: View {
                 }
             }
             .navigationBarItems(leading: Button(action: service.logOut, label: { Text("Sign out") }),
-                                trailing: Button(action: togglePresentAddTransactionView) {
-                                    Image(systemName: "dollarsign.circle.fill")
-                                })
+                                trailing: getTrailingButton())
             .navigationBarTitle(Text("AndyCoin Balances"))
             .sheet(isPresented: $presentAddTransactionView) { AddTransactionView(service: service) }
         }

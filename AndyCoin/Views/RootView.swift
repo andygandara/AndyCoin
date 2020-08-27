@@ -14,14 +14,8 @@ struct RootView: View {
     var body: some View {
         Group {
             if signedIn {
-                if service.isAdmin {
-                    UserBalancesView(service: service)
-                        .onAppear(perform: service.startSessionListener)
-                } else {
-                    BalanceView(service: service,
-                                user: service.users.filter { $0.id == service.user?.uid }.first ?? ACUser(id: nil, name: ""))
-                        .onAppear(perform: service.startSessionListener)
-                }
+                UserBalancesView(service: service)
+                    .onAppear(perform: service.startSessionListener)
             } else {
                 SignInView(service: service)
             }
