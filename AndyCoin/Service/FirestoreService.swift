@@ -95,7 +95,6 @@ class FirestoreService: ObservableObject {
                     .compactMap { try? $0.data(as: AdminID.self) }
                     .compactMap { $0.id } ?? []
                 self?.adminIds = adminIds
-                print(adminIds.contains(self?.user?.uid ?? ""))
                 self?.isAdmin = adminIds.contains(self?.user?.uid ?? "")
             }
     }

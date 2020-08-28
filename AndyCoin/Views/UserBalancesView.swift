@@ -28,19 +28,55 @@ struct UserBalancesView: View {
         return nil
     }
     
+    func getSelf() -> ACUser? {
+        return service.users.filter { $0.id == service.user?.uid }.first
+    }
+    
+    func getOtherUsers() -> [ACUser] {
+        return service.users.filter { $0.id != service.user?.uid }
+    }
+    
     var body: some View {
         NavigationView {
-            ZStack {
+            if #available(iOS 14.0, *) {
                 List {
-                    ForEach(service.users) { user in
-                        UserBalanceRowView(service: service, user: user)
+                    if getSelf() != nil {
+                        Section {
+                            UserBalanceRowView(service: service, user: getSelf()!)
+                        }
+                    }
+                    
+                    Section {
+                        ForEach(getOtherUsers()) { user in
+                            UserBalanceRowView(service: service, user: user)
+                        }
                     }
                 }
+                .listStyle(InsetGroupedListStyle())
+                .navigationBarItems(leading: Button(action: service.logOut, label: { Text("Sign out") }),
+                                    trailing: getTrailingButton())
+                .navigationBarTitle(Text("AndyCoin Balances"))
+                .sheet(isPresented: $presentAddTransactionView) { AddTransactionView(service: service) }
+            } else {
+                List {
+                    if getSelf() != nil {
+                        Section {
+                            UserBalanceRowView(service: service, user: getSelf()!)
+                        }
+                    }
+                    
+                    Section {
+                        ForEach(getOtherUsers()) { user in
+                            UserBalanceRowView(service: service, user: user)
+                        }
+                    }
+                }
+                .listStyle(GroupedListStyle())
+                .navigationBarItems(leading: Button(action: service.logOut, label: { Text("Sign out") }),
+                                    trailing: getTrailingButton())
+                .navigationBarTitle(Text("AndyCoin Balances"))
+                .sheet(isPresented: $presentAddTransactionView) { AddTransactionView(service: service) }
             }
-            .navigationBarItems(leading: Button(action: service.logOut, label: { Text("Sign out") }),
-                                trailing: getTrailingButton())
-            .navigationBarTitle(Text("AndyCoin Balances"))
-            .sheet(isPresented: $presentAddTransactionView) { AddTransactionView(service: service) }
         }
     }
 }
