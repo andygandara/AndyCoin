@@ -36,6 +36,7 @@ class FirestoreService: ObservableObject {
             if let user = user {
                 self?.user = user
                 self?.isLoggedIn = true
+                self?.isAdmin = ((self?.adminIds.contains(self?.user?.uid ?? "")) != nil)
             } else {
                 self?.user = nil
                 self?.isLoggedIn = false
